@@ -13,7 +13,7 @@ namespace validRegistration.DAL
 
         public Connection()
         {
-            con.ConnectionString = @"";
+            con.ConnectionString = @"Data Source=DESKTOP-7O6596M;Initial Catalog=validRegistration;Integrated Security=True";
         }
         public SqlConnection conect()
         {

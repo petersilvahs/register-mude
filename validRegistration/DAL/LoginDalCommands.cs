@@ -17,7 +17,7 @@ namespace validRegistration.DAL
 
         public bool checkLogin(String username, String password)
         {
-            cmd.CommandText = "select * from tableName where email = @username and password = @password";
+            cmd.CommandText = "select * from loginTable where email = @username and password = @password";
             cmd.Parameters.AddWithValue("@username", username);
             cmd.Parameters.AddWithValue("@password", password);
 

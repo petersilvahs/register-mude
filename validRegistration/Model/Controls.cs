@@ -7,19 +7,19 @@ using validRegistration.DAL;
 
 namespace validRegistration.Model
 {
-    public class Control
+    public class Controls
     {
-        public bool save;
-        public String message = " ";
-        public bool acess(String username, String password)
+        public bool have;
+        public String message = "";
+        public bool access(String username, String password)
         {
             LoginDalCommands loginDal = new LoginDalCommands();
-            save = loginDal.checkLogin(username, password);
+            have = loginDal.checkLogin(username, password);
             if (!loginDal.message.Equals(""))
             {
                 this.message = loginDal.message;
             }
-            return save;
+            return have;
         }
         public String register(String email, String password, String confPassword)
         {

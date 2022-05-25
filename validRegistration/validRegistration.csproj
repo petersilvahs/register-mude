@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="DAL\Connection.cs" />
     <Compile Include="DAL\LoginDalCommands.cs" />
-    <Compile Include="Model\Control.cs" />
+    <Compile Include="Model\Controls.cs" />
     <Compile Include="Presentation\Login.cs">
       <SubType>Form</SubType>
     </Compile>
